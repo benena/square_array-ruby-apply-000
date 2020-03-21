@@ -1,10 +1,12 @@
-  # your code here
 
-def square_array(array)
-  new_numbers = []
-  array.each do |x|
-    new_numbers << x**2
- end
- new_numbers
+def square_array(numbers)
+  array = []
+  numbers.each do |x|
+    array.push x ** 2
+  end
+  array
 end
 
+
+# technically .push can work because there is only 1 element to be pushed per loop.
+# should use << but fun to mess around.
